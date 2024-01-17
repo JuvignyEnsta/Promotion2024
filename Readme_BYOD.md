@@ -18,7 +18,7 @@ Le mieux est d'utiliser Anaconda :  https://www.anaconda.com/products/individual
 
    * Installer msmpi : https://learn.microsoft.com/fr-fr/message-passing-interface/microsoft-mpi (Attention, ne pas oublier d'installer les deux paquets proposés !)
    * Installer python à partir du Windows Store
-   * Utiliser pip pour installer mpi4py et pygame :
+   * Utiliser pip pour installer mpi4py et pygame (à partir d'un terminal du style powershell):
       - ```pip install mpi4py```
       - ```pip install pygame```
 
