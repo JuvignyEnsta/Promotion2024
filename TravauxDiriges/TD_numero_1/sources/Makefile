@@ -1,5 +1,5 @@
-#include Make_linux.inc
-include Make_msys2.inc
+include Make_linux.inc
+# include Make_msys2.inc
 #include Make_osx.inc
 
 CXXFLAGS = -std=c++14
