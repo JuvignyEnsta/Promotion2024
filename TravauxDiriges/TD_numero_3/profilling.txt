@@ -1,0 +1,127 @@
+mpiexec -np 1 python bucket_sort.py 
+Elapsed time to sort the vector: 0.09472966194152832
+
+scatter:  6.308%
+min-max:  1.058%
+indices:  9.527%
+buckets:  2.075%
+all2all:  7.390%
+sort:    66.276%
+gather:   5.258%
+concat:   2.107%
+
+
+
+mpiexec -np 1 python bucket_sort.py
+Elapsed time to sort the vector: 0.09278368949890137
+
+scatter:  5.441%
+min-max:  1.078%
+indices:  9.702%
+buckets:  3.232%
+all2all:  7.492%
+sort:    66.613%
+gather:   5.313%
+concat:   1.129%
+
+
+
+mpiexec -np 1 python bucket_sort.py
+Elapsed time to sort the vector: 0.09557104110717773
+
+scatter:  6.290%
+min-max:  1.047%
+indices:  9.416%
+buckets:  2.627%
+all2all:  7.875%
+sort:    64.373%
+gather:   6.279%
+concat:   2.094%
+
+
+====================================================
+
+
+mpiexec -np 4 python bucket_sort.py 
+Elapsed time to sort the vector: 0.05251455307006836
+
+scatter: 15.242%
+min-max:  1.907%
+indices: 11.423%
+buckets: 12.396%
+all2all: 13.338%
+sort:    26.650%
+gather:  13.334%
+concat:   5.710%
+
+
+
+mpiexec -np 4 python bucket_sort.py
+Elapsed time to sort the vector: 0.059008121490478516
+
+scatter: 11.866%
+min-max:  1.694%
+indices: 10.168%
+buckets:  8.473%
+all2all: 15.269%
+sort:    32.182%
+gather:  13.569%
+concat:   6.780%
+
+
+
+mpiexec -np 4 python bucket_sort.py
+Elapsed time to sort the vector: 0.0520021915435791
+
+scatter: 13.468%
+min-max:  1.920%
+indices: 11.540%
+buckets: 11.545%
+all2all: 11.533%
+sort:    30.763%
+gather:  13.470%
+concat:   5.761%
+
+
+====================================================
+
+
+mpiexec -np 8 python bucket_sort.py
+Elapsed time to sort the vector: 0.059525489807128906
+
+scatter: 16.807%
+min-max:  3.356%
+indices:  8.400%
+buckets: 11.768%
+all2all: 13.474%
+sort:    15.090%
+gather:  22.706%
+concat:   8.399%
+
+
+
+mpiexec -np 8 python bucket_sort.py
+Elapsed time to sort the vector: 0.056017160415649414
+
+scatter: 16.071%
+min-max:  3.580%
+indices: 10.702%
+buckets: 10.728%
+all2all: 12.492%
+sort:    14.265%
+gather:  23.213%
+concat:   8.950%
+
+
+
+mpiexec -np 8 python bucket_sort.py
+Elapsed time to sort the vector: 0.05655694007873535
+
+scatter: 17.683%
+min-max:  1.777%
+indices: 10.612%
+buckets: 10.613%
+all2all: 13.298%
+sort:    16.812%
+gather:  20.363%
+concat:   8.842%
