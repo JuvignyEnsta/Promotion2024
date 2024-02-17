@@ -16,13 +16,13 @@ class Grid:
 
         self.diff = None
 
-    def update(self) -> None:
+    def update(self, str_y: int, end_y: int) -> None:
         sy, sx = self.size
 
         copy = np.copy(self.cells)
 
-        diff = []
-        for i in range(sy):
+        diff = np.zeros((0, 2), dtype=np.uint8)
+        for i in range(str_y, end_y):
             i_abv = (i - 1) % sy   # Cell above
             i_blw = (i + 1) % sy   # Cell below
 
@@ -38,23 +38,23 @@ class Grid:
                 counter = np.sum(neighbors)
 
                 # The cell is alive
-                if self.cells[i,j] == 1:
+                if self.cells[i, j] == 1:
                     if counter != 2 and counter != 3:
                         copy[i, j] = 0
 
                         if self.diff is not None:
-                            diff.append((i, j))
+                            diff = np.append(diff, [[i, j]], axis=0)
 
                 # The cell is dead
                 elif counter == 3:
                     copy[i, j] = 1
 
                     if self.diff is not None:
-                        diff.append((i, j))
+                        diff = np.append(diff, [[i, j]], axis=0)
 
                 # Just to fix the visualization in the first frame
                 if self.diff is None:
-                    diff.append((i, j))
+                    diff = np.append(diff, [[i, j]], axis=0)
 
         self.diff = diff
         self.cells = copy
