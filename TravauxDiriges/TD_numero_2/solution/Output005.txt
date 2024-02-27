@@ -1,0 +1,1 @@
+Temps du calcul de l'ensemble de Mandelbrot : 1.8851747512817383
