@@ -2,10 +2,8 @@
 
 **Étudiant:** Filipe LACERDA BENEVIDES
 
-## Travaux dirigés
+## Travaux Pratiques
 
 - [x] TD2
 - [x] TD3
 - [x] TD4
-- [ ] TD5
-- [ ] TD6
